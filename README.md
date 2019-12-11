@@ -56,7 +56,7 @@ git clone https://github.com/leodsti/AWS_Tutorials.git
 ~/AWS_Tutorials/MNIST$ sudo mv index.html /var/www/html/
 
 ```
-![Semantic description of image][IP_change.png]
+![Légende](IP_change.png)
 
 ## Third instance
 
