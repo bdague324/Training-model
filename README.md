@@ -3,10 +3,10 @@
 
 # Framework
 
-We  need to create 3 AWS instances into one VPC
-* public instances - Ubuntu
-* public instances - Ubuntu
-* public instances - Ubuntu
+We  need to create 3 AWS instances (Deep Learning Base AMI (Ubuntu 16.04) Version 21.0 - ami-045565871c0771faf) into one VPC
+1. public instances - Ubuntu
+1. public instances - Ubuntu
+1. public instances - Ubuntu
 
 ## First instance
 
@@ -56,6 +56,21 @@ git clone https://github.com/leodsti/AWS_Tutorials.git
 ~/AWS_Tutorials/MNIST$ sudo mv index.html /var/www/html/
 
 ```
+### Security Group & port choice
+
+### IP changes
+```
+Sudo vi index.html
+
+# Type “I” to insert text- Put the IP number of the backend Instance (in the url field)
+# then controle C
+
+:wq
+
+# :wq is to write and quit
+```
+Here below a figure representing the opened file by the Vi_editor
+
 ![Légende](IP_change.png)
 
 ## Third instance
