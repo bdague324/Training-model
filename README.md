@@ -8,16 +8,18 @@ The architecture is splited into 3 instances
 * to have more flexibility
 
 So we need to create 3 AWS instances "Deep Learning Base AMI (Ubuntu 16.04) Version 21.0 - ami-045565871c0771faf" into our VPC:
-1. public instances - Ubuntu (instance for training the model)
-1. public instances - Ubuntu (Front end)
+1. public instances - Ubuntu (instance for training the model) - between 15 to 20 Gigabyte,
+1. public instances - Ubuntu (Front end),
 1. public instances - Ubuntu (Back end).
 
 The **front end** interacts with the user, gathers all it needs and send it to the back end.
 The **back end** computes and send back information to the front end to be displayed to the end user.
 
-# Database used
+# Database and files used
 
 We are going to use the MNIST database developped by Yann LeCun. It is a dataset composed of 60000 examples of written numbers (from 0 to 9). We will have 60 examples as our test set.
+
+The text file called **requirement.txt** contains the list of the packages and the version we need.
 
 ## First instance - Machine number 1
 
@@ -54,10 +56,11 @@ ipython kernel install --user --name=nameyouwanttodisplay
 pip install --upgrade tensorflow
 
 ```
-Open and execute the following notebook called 00-mnist-cnn.ipynb.
+Open and execute the following notebook called 00-mnist-cnn.ipynb for training our model.
 
 ![Légende](Notebook_mnist.png)
 
+The output file is called:
 
 ## Second instance  - Machine number 2
 
