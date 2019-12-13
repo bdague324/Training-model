@@ -3,10 +3,13 @@
 
 # Framework
 
-We  need to create 3 AWS instances "Deep Learning Base AMI (Ubuntu 16.04) Version 21.0 - ami-045565871c0771faf" into one VPC
-1. public instances - Ubuntu
-1. public instances - Ubuntu
-1. public instances - Ubuntu
+The architecture is splited into 3 instances. So we need to create 3 AWS instances "Deep Learning Base AMI (Ubuntu 16.04) Version 21.0 - ami-045565871c0771faf" into one VPC
+1. public instances - Ubuntu (instance for training the model)
+1. public instances - Ubuntu (Front end)
+1. public instances - Ubuntu (Back end).
+
+The **front end** interacts with the user, gathers all it needs and send it to the back end.
+The **back end** computes and send back information to the front end to be displayed to the end user.
 
 ## First instance
 
@@ -45,7 +48,12 @@ pip install --upgrade tensorflow
 
 ## Second instance
 
-This instance is used as the "front end". We need to install Apache & httpd.
+This instance is a webserver (web app) used as the "front end". We will need to:
+* install the webserver,
+* deploy the files in the right place,
+* install Apache server & httpd.
+* test if it works.
+
 ```
 sudo apt-get update
 sudo apt-get install yum
@@ -80,8 +88,8 @@ Here below a figure representing the opened file using the VI_editor
 
 ![Légende](IP_change.png)
 
-## Third instance
+## Third instance (Flask (equivalent of NodeJS))
 
-This instance is used as the "back end". This last instance do the prediction.
+This instance is used as the "back end". This last instance do the prediction. It is our application. Our model is saved in our Back end. Our instance is installed into the public subnet but without a public IP.
 
 In this instance, we need to install opencv to execute "keras_flask.py" file.
