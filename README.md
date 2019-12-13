@@ -3,13 +3,21 @@
 
 # Framework
 
-The architecture is splited into 3 instances. So we need to create 3 AWS instances "Deep Learning Base AMI (Ubuntu 16.04) Version 21.0 - ami-045565871c0771faf" into one VPC
+The architecture is splited into 3 instances
+* to avoid for example interuption in the production (update,...)
+* to have more flexibility
+
+So we need to create 3 AWS instances "Deep Learning Base AMI (Ubuntu 16.04) Version 21.0 - ami-045565871c0771faf" into our VPC:
 1. public instances - Ubuntu (instance for training the model)
 1. public instances - Ubuntu (Front end)
 1. public instances - Ubuntu (Back end).
 
 The **front end** interacts with the user, gathers all it needs and send it to the back end.
 The **back end** computes and send back information to the front end to be displayed to the end user.
+
+# Database used
+
+We are going to use the MNIST database developped by Yann LeCun. It is a dataset composed of 60000 examples of written numbers (from 0 to 9). We will have 60 examples as our test set.
 
 ## First instance
 
