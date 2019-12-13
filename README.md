@@ -96,9 +96,11 @@ git clone https://github.com/leodsti/AWS_Tutorials.git
 " copy at the right place the index.html file.
 ~/AWS_Tutorials/MNIST$ sudo mv index.html /var/www/html/
 
+"Commands to know: for deleteting a directory : rm -rf /nom-repertoire
+
 ```
 
-Here below the figure repsenting the webserver opened:
+Here below the figure representing the Apache webserver (reached using the following adress http://34.229.180.22/) opened and installed:
 
 ![Légende](Apache_webserver.PNG)
 
