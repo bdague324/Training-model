@@ -19,15 +19,16 @@ The **back end** computes and send back information to the front end to be displ
 
 We are going to use the MNIST database developped by Yann LeCun. It is a dataset composed of 60000 examples of written numbers (from 0 to 9). We will have 60 examples as our test set.
 
-## First instance
+## First instance - Machine number 1
 
 This instance is used to train the model. We will need to:
-* install Jupyter
-* train our model (provided)
-* save our model
-* create a virtual environment
+* install Anaconda
+* install Jupyter (Jupyter Notebook),
+* train our model (provided),
+* save our model,
+* create a virtual environment.
 
-We will use Keras and Tensorflow. Once the model is trained and saved we shut our instance down.
+We will use Keras and Tensorflow 1.8. Once the model is trained and saved we shut our instance down.
 
 Herebelow the code used:
 
@@ -53,8 +54,12 @@ ipython kernel install --user --name=nameyouwanttodisplay
 pip install --upgrade tensorflow
 
 ```
+Open and execute the following notebook called 00-mnist-cnn.ipynb.
 
-## Second instance
+![Légende](Notebook_mnist.png)
+
+
+## Second instance  - Machine number 2
 
 This instance is a webserver (web app) used as the "front end". We will need to:
 * install the webserver,
@@ -96,7 +101,7 @@ Here below a figure representing the opened file using the VI_editor
 
 ![Légende](IP_change.png)
 
-## Third instance (Flask (equivalent of NodeJS))
+## Third instance (Flask (equivalent of NodeJS)) - Application server - Machine number 3
 
 This instance is used as the "back end". This last instance do the prediction. It is our application. Our model is saved in our Back end. Our instance is installed into the public subnet but without a public IP.
 
