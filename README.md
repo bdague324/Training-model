@@ -1,4 +1,4 @@
-# Training model
+# Training model & objective of the tutorial
  Deploying - Training - saving model - having a web page
 
 # Framework
