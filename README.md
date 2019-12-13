@@ -32,7 +32,9 @@ This instance is used to train the model. We will need to:
 
 We will use Keras and Tensorflow 1.8. Once the model is trained and saved we shut our instance down.
 
-Herebelow the code used:
+ **Tensorflow** is here the main framework in deeplearning. **Keras** is a meta framework which helps to facilitate the coding (in a syntax point of view) and interface with Tensorflow.
+
+Connect to the instance and type the code Herebelow:
 
 ```
 wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
@@ -55,8 +57,15 @@ ipython kernel install --user --name=nameyouwanttodisplay
 #Tensorflow 1.8
 pip install --upgrade tensorflow
 
+sudo apt-get install git
+git clone https://github.com/leodsti/AWS_Tutorials.git
+pip install -r AWS_Tutorials/MNIST/requirements.txt
+
 ```
-Open and execute the following notebook called 00-mnist-cnn.ipynb for training our model.
+Open and execute the following notebook called 00-mnist-cnn.ipynb for training our model which try to predict 10 classes:
+
+Image are pictures 28*28 pixels (multi dimensional arrays):
+![Légende](Shape_data.PNG)
 
 ![Légende](Notebook0_mnist.png)
 
