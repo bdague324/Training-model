@@ -76,7 +76,7 @@ The output file is called: cnn-mnist - 2.58 MB
 This instance is a webserver (web app) used as the "front end". We will need to:
 * install the webserver,
 * deploy the files in the right place,
-* install Apache server & httpd.
+* install **Apache server** & httpd.
 * test if it works.
 
 ```
@@ -93,12 +93,22 @@ sudo systemtl status apache2
 sudo apt-get install git
 git clone https://github.com/leodsti/AWS_Tutorials.git
 
+" copy at the right place the index.html file.
 ~/AWS_Tutorials/MNIST$ sudo mv index.html /var/www/html/
 
 ```
+
+Here below the figure repsenting the webserver opened:
+
+![Légende](Apache_webserver.PNG)
+
+
 ### Security Group & port choice
 
-### IP changes
+The port that must be opened is: 80 (HTTP)
+
+### Changing the IP from the backend
+
 ```
 Sudo vi index.html
 
