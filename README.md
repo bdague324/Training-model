@@ -58,7 +58,7 @@ pip install --upgrade tensorflow
 ```
 Open and execute the following notebook called 00-mnist-cnn.ipynb for training our model.
 
-![Légende](Notebook_mnist.png)
+![Légende](Notebook0_mnist.png)
 
 The output file is called:
 
