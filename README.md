@@ -62,14 +62,14 @@ git clone https://github.com/leodsti/AWS_Tutorials.git
 pip install -r AWS_Tutorials/MNIST/requirements.txt
 
 ```
-Open and execute the following notebook called 00-mnist-cnn.ipynb for training our model which try to predict 10 classes:
+Open and execute the following notebook called 00-mnist-cnn.ipynb for training our model which tries to predict 10 classes:
 
 Image are pictures 28*28 pixels (multi dimensional arrays):
 ![Légende](Shape_data.PNG)
 
 ![Légende](Notebook0_mnist.png)
 
-The output file is called:
+The output file is called: cnn-mnist - 2.58 MB
 
 ## Second instance  - Machine number 2
 
