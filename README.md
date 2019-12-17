@@ -93,7 +93,7 @@ sudo systemtl status apache2
 sudo apt-get install git
 git clone https://github.com/leodsti/AWS_Tutorials.git
 
-" copy at the right place the index.html file.
+" copy at the right place the "index.html" file (ie. document root).
 ~/AWS_Tutorials/MNIST$ sudo mv index.html /var/www/html/
 
 "Commands to know: for deleteting a directory : rm -rf /nom-repertoire
