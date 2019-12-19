@@ -109,16 +109,15 @@ Here below the figure representing the Apache webserver (reached using the follo
 
 The port that must be opened is: 80 (HTTP)
 
-### Changing the IP from the backend
+### Changing the IP of the backend in the index.html file with Frontend
 
 ```
 sudo vi index.html
 
 # Type “I” to insert text- Put the IP number of the backend Instance (in the url field)
-# then controle C
+# then controle C and echap
+# type the command :wq to write and quit
 :wq
-
-# :wq is to write and quit
 
 ```
 Here below a figure representing the opened file using the VI_editor
@@ -129,7 +128,7 @@ Here below a figure representing the opened file using the VI_editor
 
 This instance is used as the "back end". This last instance do the prediction. It is our application. Our model is saved in our Back end. Our instance is installed into the public subnet but without a public IP.
 
-In this instance, we need to install opencv to execute "keras_flask.py" file.
+In this instance, we need to install **opencv** to execute "keras_flask.py" file.
 ```
 sudo apt-get update
 sudo apt-get install python3-opencv
@@ -137,9 +136,28 @@ sudo apt-get update
 pip install flask
 sudo apt-get update
 pip install imageio
+
+conda activate nameofyourenv
+cd AWS_Tutorials/MNIST
 python3 keras_flask.py
 ```
 
 # Predictions realized from the front-send
 
-![Légende](IP_change.png)
+![Légende](Prediction_N1.PNG)
+
+![Légende](Prediction_N2.PNG)
+
+![Légende](Prediction_N3.PNG)
+
+![Légende](Prediction_N4.PNG)
+
+![Légende](Prediction_N5.PNG)
+
+![Légende](Prediction_N6.PNG)
+
+![Légende](Prediction_N7.PNG)
+
+![Légende](Prediction_N8.PNG)
+
+![Légende](Prediction_N9.PNG)
