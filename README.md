@@ -104,6 +104,7 @@ Here below the figure representing the Apache webserver (reached using the follo
 
 ![Légende](Apache_webserver.PNG)
 
+As our Public IP is not an elastic IP, each time the instance is stopped & restart the public IP is changed. Thus we need to update the IP address.
 
 ### Security Group & port choice
 
@@ -157,22 +158,52 @@ cd AWS_Tutorials/MNIST
 python3 keras_flask.py
 ```
 
-# Predictions realized from the frontend
+As our **Public IP** is not an elastic IP, each time the instance is stopped & restarted the public IP is changed. We need to update the backend public IP address indicated into the "index.html" file within the frontend instance before using the application.
 
+
+# Results of predictions realized from the frontend
+
+## Number 1
 ![Légende](Prediction_N1.PNG)
 
+The model is able to recognize the number.
+
+## Number 2
 ![Légende](Prediction_N2.PNG)
 
+The model is able to recognize the number.
+
+## Number 3
 ![Légende](Prediction_N3.PNG)
 
+The model is able to recognize the number.
+
+## Number 4
 ![Légende](Prediction_N4.PNG)
 
+The model is able to recognize the number.
+
+## Number 5
 ![Légende](Prediction_N5.PNG)
 
+The model is able to recognize the number.
+
+## Number 6
 ![Légende](Prediction_N6.PNG)
 
+The model is able to recognize the number.
+
+## Number 7
 ![Légende](Prediction_N7.PNG)
 
+The model is able to recognize the number.
+
+## Number 8
 ![Légende](Prediction_N8.PNG)
 
+The model is able to recognize the number.
+
+## Number 9
 ![Légende](Prediction_N9.PNG)
+
+The model is able to recognize the number.
