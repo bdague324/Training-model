@@ -160,6 +160,9 @@ python3 keras_flask.py
 
 As our **Public IP** is not an elastic IP, each time the instance is stopped & restarted the public IP is changed. We need to update the backend public IP address indicated into the "index.html" file within the frontend instance before using the application.
 
+Some modifications have been done on the keras_flask.py file. Here below the modifications indicated by a red line:
+
+![Légende](Modifications_Keras_Flask.PNG)
 
 # Results of predictions realized from the frontend
 
