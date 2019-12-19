@@ -30,7 +30,7 @@ This instance is used to train the model. We will need to:
 * save our model,
 * create a virtual environment.
 
-We will use Keras and Tensorflow 1.8. Once the model is trained and saved we shut our instance down.
+We will use Keras and Tensorflow 1.8. Once the model is trained and saved we can shut our instance down.
 
  **Tensorflow** is the main framework in deeplearning. **Keras** is a meta framework which helps to facilitate the coding (in a syntax point of view) and interface with Tensorflow.
 
@@ -69,7 +69,7 @@ Image are pictures 28*28 pixels (multi dimensional arrays):
 
 ![Légende](Notebook0_mnist.png)
 
-The output file is called: cnn-mnist - 2.58 MB
+The output file is called: cnn-mnist (2.58 MB).
 
 ## Second instance  - Machine number 2
 
@@ -104,13 +104,15 @@ Here below the figure representing the Apache webserver (reached using the follo
 
 ![Légende](Apache_webserver.PNG)
 
-As our Public IP is not an elastic IP, each time the instance is stopped & restart the public IP is changed. Thus we need to update the IP address.
+As our Public IP is not an elastic IP, each time the instance is stopped & restart the public IP is changed.
 
 ### Security Group & port choice
 
 The port that must be opened is: 80 (HTTP)
 
 ### Changing the IP of the backend in the index.html file with Frontend
+
+Indeed as we said, our Public IP is not an elastic IP, each time the instance is stopped & restart the public IP is changed. so we need to update this IP into the index.html file.
 
 ```
 sudo vi index.html
@@ -124,6 +126,7 @@ sudo vi index.html
 Here below a figure representing the opened file using the VI_editor
 
 ![Légende](IP_change.png)
+
 
 ## Third instance (Flask (equivalent of NodeJS)) - Application server - Machine number 3
 
@@ -160,7 +163,7 @@ python3 keras_flask.py
 
 As our **Public IP** is not an elastic IP, each time the instance is stopped & restarted the public IP is changed. We need to update the backend public IP address indicated into the "index.html" file within the frontend instance before using the application.
 
-Some modifications have been done on the keras_flask.py file. Here below the modifications indicated by a red line:
+Some modifications have been done on the keras_flask.py file to solve few issues. Here below the various modifications done indicated by a red line:
 
 ![Légende](Modifications_Keras_Flask.PNG)
 
