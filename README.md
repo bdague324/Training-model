@@ -100,7 +100,7 @@ git clone https://github.com/leodsti/AWS_Tutorials.git
 
 ```
 
-Here below the figure representing the Apache webserver (reached using the following adress http://34.229.180.22/) opened and installed:
+Here below the figure representing the Apache webserver (reached using the following address http://34.229.180.22/) opened and installed:
 
 ![Légende](Apache_webserver.PNG)
 
@@ -119,6 +119,7 @@ sudo vi index.html
 :wq
 
 # :wq is to write and quit
+
 ```
 Here below a figure representing the opened file using the VI_editor
 
@@ -138,3 +139,7 @@ sudo apt-get update
 pip install imageio
 python3 keras_flask.py
 ```
+
+# Predictions realized from the front-send
+
+![Légende](IP_change.png)
