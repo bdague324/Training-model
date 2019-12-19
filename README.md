@@ -32,7 +32,7 @@ This instance is used to train the model. We will need to:
 
 We will use Keras and Tensorflow 1.8. Once the model is trained and saved we shut our instance down.
 
- **Tensorflow** is here the main framework in deeplearning. **Keras** is a meta framework which helps to facilitate the coding (in a syntax point of view) and interface with Tensorflow.
+ **Tensorflow** is the main framework in deeplearning. **Keras** is a meta framework which helps to facilitate the coding (in a syntax point of view) and interface with Tensorflow.
 
 Connect to the instance and type the code Herebelow:
 
@@ -73,7 +73,7 @@ The output file is called: cnn-mnist - 2.58 MB
 
 ## Second instance  - Machine number 2
 
-This instance is a webserver (web app) used as the "front end". We will need to:
+This instance is the webserver (web app) used as the "front end". We will need to:
 * install the webserver,
 * deploy the files in the right place,
 * install **Apache server** & httpd.
@@ -126,23 +126,38 @@ Here below a figure representing the opened file using the VI_editor
 
 ## Third instance (Flask (equivalent of NodeJS)) - Application server - Machine number 3
 
-This instance is used as the "back end". This last instance do the prediction. It is our application. Our model is saved in our Back end. Our instance is installed into the public subnet but without a public IP.
+This instance is used as the "back end". This last instance do the prediction. It is our application. Our model is saved in our Backend. Our instance is installed into the public subnet but without a public IP.
 
 In this instance, we need to install **opencv** to execute "keras_flask.py" file.
+
 ```
+wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+sudo bash Anaconda3-2019.03-Linux-x86_64.sh #Answer yes to all questions
+export PATH=~/anaconda3/bin:$PATH #If conda command is not found after installation
+
+conda create -n nameofyourenv python=3.6
+conda install nb_conda "This needs to be done outside your virtual env
+
 sudo apt-get update
 sudo apt-get install python3-opencv
+
 sudo apt-get update
 pip install flask
+
 sudo apt-get update
 pip install imageio
+
+sudo apt-get install git
+git clone https://github.com/leodsti/AWS_Tutorials.git
+
+pip install -r AWS_Tutorials/MNIST/requirements.txt
 
 conda activate nameofyourenv
 cd AWS_Tutorials/MNIST
 python3 keras_flask.py
 ```
 
-# Predictions realized from the front-send
+# Predictions realized from the frontend
 
 ![Légende](Prediction_N1.PNG)
 
