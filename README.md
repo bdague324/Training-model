@@ -12,8 +12,8 @@ So we need to create 3 AWS instances "Deep Learning Base AMI (Ubuntu 16.04) Vers
 1. public instances - Ubuntu (Front end),
 1. public instances - Ubuntu (Back end).
 
-The **front end** interacts with the user, gathers all it needs and send it to the back end.
-The **back end** computes and send back information to the front end to be displayed to the end user.
+The **front end** interacts with the user, gathers all it needs and sends it to the back end.
+The **back end** computes and sends back information to the front end to be displayed to the end user.
 
 # Database and files used
 
@@ -34,7 +34,7 @@ We will use Keras and Tensorflow 1.8. Once the model is trained and saved we can
 
  **Tensorflow** is the main framework in deeplearning. **Keras** is a meta framework which helps to facilitate the coding (in a syntax point of view) and interface with Tensorflow.
 
-Connect to the instance and type the code Herebelow:
+Connect to the instance and type the code Here below:
 
 ```
 wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
@@ -44,7 +44,7 @@ export PATH=~/anaconda3/bin:$PATH #If conda command is not found after installat
 jupyter notebook --ip=0.0.0.0 --no-browser
 
 conda create -n nameofyourenv python=3.6
-conda install nb_conda "This needs to be done outside your virtual env
+conda install nb_conda "This needs to be done outside your virtual environment
 
 conda activate nameofyourenv
 conda install ipykerne
