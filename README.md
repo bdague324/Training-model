@@ -1,5 +1,5 @@
 # Training model & objective of the tutorial
- Deploying - Training - saving model - having a web page.
+ Deploying - Training - saving model which are able to classify handwritten digits from 0 to 9 - having a web page.
 
 # Framework
 
@@ -155,7 +155,7 @@ sudo apt-get install git
 git clone https://github.com/leodsti/AWS_Tutorials.git
 
 pip install -r AWS_Tutorials/MNIST/requirements.txt
-
+cd
 conda activate nameofyourenv
 cd AWS_Tutorials/MNIST
 python3 keras_flask.py
